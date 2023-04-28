@@ -15,9 +15,9 @@ const Main = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
-  const apiKey = '0c9d4f315dacf187344a478039855a1b'
-  let fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&lang=en&units=metric`
-  let fetchUrlForcast = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&lang=en&units=metric`
+  const apiKey = process.env.REACT_APP_APIKEY 
+  let fetchUrl = `${process.env.REACT_APP_URL}/weather?q=${cityName}&appid=${apiKey}&lang=en&units=metric`
+  let fetchUrlForcast = `${process.env.REACT_APP_URL}/forecast?q=${cityName}&appid=${apiKey}&lang=en&units=metric`
 
   useEffect(() => {
     if (cityName !== '') {
@@ -26,12 +26,12 @@ const Main = () => {
         .then((res) => res.json())
         .then((data) => {
           if (data.cod !== 200) {
-            console.log(data)
+           // console.log(data)
             setError(true)
             setLoading(false)          
           } else {
             setWeatherData(data)
-            console.log(data)
+           // console.log(data)
           }
         })
 
@@ -39,11 +39,11 @@ const Main = () => {
         .then((res) => res.json())
         .then((data) => {
           if (data.cod !== '200') {
-            console.log(data)
+           // console.log(data)
             return
           } else {
             setForecast(data)
-            console.log(data)
+           // console.log(data)
             setLoading(false)
           }
         })
@@ -72,7 +72,7 @@ const Main = () => {
   const handleError = () => {
     setError(false)
   }
-
+console.log(process.env)
   return (
     <main className={classes.main}>
       <SmallSavedCities

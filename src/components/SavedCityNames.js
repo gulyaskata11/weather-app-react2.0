@@ -1,5 +1,4 @@
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import classes from './SavedCityNames.module.css'
 
 const SavedCityNames = ({ title, cities, setMyCities, handleCityName }) => {
