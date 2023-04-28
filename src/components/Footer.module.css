@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  border-top: 3px solid #3bfedb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  background-color: black;
+  opacity: 0.55;
+}
+
+.made-by {
+  font-size: large;
+  font-weight: 800;
+  color: #3bfedb;
+}
+
+.footer div a {
+  text-decoration: none;
+  color: #3bfedb;
+  font-weight: 800;
+}
+
+@media (min-width: 640px) {
+  .footer {
+    padding: 0 0.75rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    padding: 0 1.5rem;
+  }
+}

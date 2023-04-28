@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.5rem;
+  font-weight: 800;
+  font-size: medium;
+  color: #3bfedb;
+  border-bottom: 3px solid #3bfedb;
+}
+
+@media (min-width : 475px) {
+  .header {
+    font-size: large;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .header {
+    font-size: larger;
+  }
+}
+
+@media (min-width: 780px) {
+  .header {
+    font-size: x-large;
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    font-size: xx-large;
+  }
+}
+
+/* @media (min-width: 1280px) {
+  
+}
+
+@media (min-width: 1536px) {
+  
+} */

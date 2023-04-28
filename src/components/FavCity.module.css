@@ -1,0 +1,18 @@
+.fav-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.fav-city p {
+  cursor: pointer;
+}
+
+.fav-city button {
+  background-color: rgb(250, 98, 98);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

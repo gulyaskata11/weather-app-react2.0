@@ -1,0 +1,9 @@
+.saved {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #3bfedb;
+  font-size: medium;
+  font-weight: 400;
+}

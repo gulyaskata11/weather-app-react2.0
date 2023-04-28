@@ -1,0 +1,15 @@
+.weather-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+
+
+@media (min-width: 780px) {
+  .weather-card {
+    justify-content: space-between;
+  }
+} 
+

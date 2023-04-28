@@ -1,0 +1,51 @@
+.second-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #fbff00; */
+  background: rgba(250, 255, 2);
+  height: 250px;
+  width: 100%;
+  /* margin-bottom: 5px; */
+  border-top: 2px solid #3bfedb;
+  border-bottom: 2px solid #3bfedb;
+  border: 1px dashed black;
+}
+
+.feels-like,
+.wind,
+.humidity,
+.visibility {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.temperature {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 63px;
+  font-weight: 500;
+  letter-spacing: -0.25rem;
+  position: relative;
+}
+
+.temperature .time-of-day {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+
+.details-info {
+  width: 55%;
+  padding-top: 10px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}

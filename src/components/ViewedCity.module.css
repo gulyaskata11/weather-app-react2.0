@@ -1,0 +1,8 @@
+.viewed-city {
+  margin: 5px 0;
+}
+
+.viewed-city p{
+  cursor: pointer;
+  color: antiquewhite;
+}
