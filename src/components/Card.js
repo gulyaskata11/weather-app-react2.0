@@ -40,7 +40,8 @@ const Card = ({ weatherData, myCities, setMyCities }) => {
           </div>
         </div>
         <div className={classes.icon}>
-          <img src={`/icon/${icon}.png`} alt="icon" />
+          {/* <img src={`/icon/${icon}.png`} alt="icon" /> */}
+          <img src={require(`../image/${icon}.png`)} alt="icon" />
         </div>
       </div>
       <div className={classes['second-sec']}>
