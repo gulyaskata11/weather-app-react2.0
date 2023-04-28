@@ -72,7 +72,7 @@ const Main = () => {
   const handleError = () => {
     setError(false)
   }
-console.log(process.env)
+
   return (
     <main className={classes.main}>
       <SmallSavedCities
